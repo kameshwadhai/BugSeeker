@@ -26,6 +26,7 @@ dependencies() {
     sudo apt-get install -y python3
     sudo apt-get install -y python3-pip
     sudo apt-get install -y python3-dnspython
+    #It is suggested to uncomment this line if you are using AWS EC2.
     #sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 
     echo -e "${CYAN}\nInstalling GO${NORMAL}"

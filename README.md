@@ -31,8 +31,6 @@ chmod +x install.sh BugSeeker.sh
 ./BugSeeker.sh -h
 ```
 
-Follow the on-screen prompts to configure your reconnaissance and vulnerability discovery scans. BugSeeker will then automate the process, providing a comprehensive report of identified vulnerabilities.
-
 ## Examples:
 ```bash
 ./BugSeeker.sh -d example.com -a      # Full Scan

@@ -75,4 +75,5 @@ chmod +x install.sh BugSeeker.sh
    - Nuclei
 
 If you have specific questions or if there's anything specific you'd like assistance with regarding this script, feel free to let me know!
+
 Thank you for using BugSeeker!

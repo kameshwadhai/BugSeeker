@@ -39,4 +39,37 @@ chmod +x install.sh BugSeeker.sh
 ./BugSeeker.sh -d example.com -v      # Check Vulnerabilities only
 ```
 
+## Tools:
+- **Passive Reconnaissance:**
+   - Whois Lookup
+   - Nslookup
+   - ASN Lookup
+   - WhatWeb
+   - SSL Checker
+   - Aquatone (screenshot tool)
+   - TheHarvester (collects emails, subdomains, hosts, etc.)
+   - CloudEnum (searches public resources in AWS, Azure, and Google Cloud)
+   - GitDorker (searches interesting data on GitHub)
+
+- **Active Reconnaissance:**
+   - Robots.txt analysis
+   - Hakrawler and gau (URL and JavaScript file locations)
+   - Arjun (finding query parameters)
+   - Secrets Finder (finding sensitive data in JavaScript files)
+   - DirSearch (searching for interesting directories and files)
+   - Nmap scan for open ports
+
+- **Vulnerability Scanning:**
+   - Missing headers
+   - Email spoofing (SPF and DMARC record check)
+   - Subdomain takeover check
+   - CORS misconfigurations check
+   - 403 bypass attempts
+   - CSRF/XSRF vulnerabilities check
+   - Open Redirect vulnerabilities check
+   - XSS vulnerabilities check
+   - SQLi vulnerabilities check
+   - Multiple vulnerabilities using Nuclei templates
+
+If you have specific questions or if there's anything specific you'd like assistance with regarding this script, feel free to let me know!
 Thank you for using BugSeeker!

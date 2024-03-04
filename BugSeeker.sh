@@ -195,7 +195,7 @@ activeReconFunction(){
     
     echo -e "\n${GREEN}[+] DirSearch ${NORMAL}\n"
     echo -e "${NORMAL}${CYAN}Searching interesting directories and files...${NORMAL}\n\n"
-    #sudo dirsearch -u $domain --deep-recursive  --exclude-status $excludeStatus -o dirsearch
+    sudo dirsearch -u $domain --deep-recursive  --exclude-status $excludeStatus -o dirsearch
     sudo cp /usr/lib/python3/dist-packages/dirsearch/dirsearch .
     
     echo -e "\n${GREEN}[+] Nmap ${NORMAL}\n"
@@ -282,7 +282,7 @@ vulnerabilities(){
     echo -e "${NORMAL}${CYAN}Gathering endpoints that they return 403 status code...${NORMAL}\n\n"
     touch endpoints403.txt
     saveUoutputFile=$actualDir"/targets/"$domain"/vulnerabilities/endpoints403.txt"
-    #sudo dirsearch -u $domainName --random-agent --include-status 403 --format plain -o $saveUoutputFile
+    sudo dirsearch -u $domainName --random-agent --include-status 403 --format plain -o $saveUoutputFile
     echo -e "\n${NORMAL}${CYAN}Trying to bypass 403 status code...${NORMAL}\n\n"
     for url in $(cat endpoints403.txt);
     do
